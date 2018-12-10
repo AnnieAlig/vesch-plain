@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Arkhip';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/arkhip_font.ttf) format("truetype"), url(../fonts/arkhip_font.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Menlo';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/menlo-regular.ttf) format("truetype"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Menlo", "sans-serif";
+  -webkit-font-smoothing: antialiased; }
+
+html, body {
+  margin: 0;
+  height: 100vh; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.2; }
+
+.container-outer {
+  max-width: 1770px; }
+
+.container-inner {
+  max-width: 1280px; }
+
+.row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.col-1 {
+  width: calc(100% / $grid-count); }
+
+.col-2 {
+  width: calc($grid-column * 2); }
+
+.col-3 {
+  width: calc($grid-column * 3); }
+
+.col-4 {
+  width: calc($grid-column * 4); }
+
+.col-5 {
+  width: calc($grid-column * 5); }
+
+.col-6 {
+  width: calc($grid-column * 6); }

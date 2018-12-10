@@ -1,0 +1,32 @@
+$main_font: 'Menlo', 'sans-serif'
+$titles_font: 'Arkhip', 'sans-serif'
+
+// colors
+$color_action: #d6da4a
+$color_text: #343a49
+$color_white: #ffffff
+$color_placeholder: #c6c7c9
+
+//font-sizes
+%font-text
+    font-size: 14px
+    line-height: 24px 
+%font-small
+    font-size: 12px
+    line-height: 20px
+    letter-spacing: .96px
+%font_titles_big 
+    font-family: $titles_font
+    font-size: 44px
+    letter-spacing: -2.64px
+%font_titles_small
+    font-family: $titles_font
+    font-size: 24px
+    letter-spacing: -1.44px
+
+// grid
+$grid-count: 4
+$grid-max: 1280px
+$grid-column: calc(100% / $grid-count)
+@media (min-width:1280px)
+    $grid-count: 6 !global
