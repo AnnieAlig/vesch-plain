@@ -25,8 +25,10 @@ $color_placeholder: #c6c7c9
     letter-spacing: -1.44px
 
 // grid
-$grid-count: 4
+$grid-count: 6
 $grid-max: 1280px
-$grid-column: calc(100% / $grid-count)
-@media (min-width:1280px)
-    $grid-count: 6 !global
+$grid-column: 100% / #{$grid-count}
+// @media (min-width:1280px)
+//     $grid-count: 6 !global
+
+$transition: all .3s ease
