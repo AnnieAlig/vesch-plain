@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    font-family: var(--main_font);
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    line-height: 24px;
+}
+html, body{
+    margin: 0;
+    height: 100vh;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h1, h2{
+    font-family: var(--titles_font);
+    font-size: 44px;
+    letter-spacing: -2.64px;
+}
+h3{
+    font-family: var(--titles_font);
+    font-size: 24px;
+    letter-spacing: -1.44px;
+}
+.text-small{
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .96px;
+}

@@ -1,0 +1,24 @@
+:root{
+    /* grid */
+    --grid-count: 4;
+    --grid-max: 1280px;
+    --grid-column: calc(100% / var(--grid-count));
+}
+@media(min-width:1280px) {
+    :root{
+        --grid-count: 6;
+        --grid-max: 1280px;
+    }
+}
+:root{
+    /* fonts */
+    --main_font: 'Menlo', 'sans-serif';
+    --titles_font: 'Arkhip', 'sans-serif';
+
+    /* colors */
+    --color_action: #d6da4a;
+    --color_text: #343a49;
+    --color_white: #ffffff;
+    --color_placeholder: #c6c7c9;
+   
+}

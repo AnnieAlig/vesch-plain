@@ -1,0 +1,33 @@
+/* container */
+.container-outer {
+    max-width: 1770px;
+}
+
+.container-inner{
+    max-width: var(--grid-max);
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    width:  var(--grid-column);
+}
+.col-2{
+    width: calc(var(--grid-column) * 2);
+}
+
+.col-3{
+    width: calc(var(--grid-column) * 3);
+}
+.col-4{
+    width: calc(var(--grid-column) * 4);
+}
+.col-5{
+    width: calc(var(--grid-column) * 5);
+}
+.col-6{
+    width: calc(var(--grid-column) * 6);
+}
