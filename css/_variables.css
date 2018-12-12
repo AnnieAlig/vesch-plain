@@ -21,4 +21,6 @@
     --color_white: #ffffff;
     --color_placeholder: #c6c7c9;
    
+    /* common styles */
+    --transition: all .3s ease;
 }

@@ -6,7 +6,6 @@ var concatCss = require('gulp-concat-css');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var postcss = require('gulp-postcss');
 
 var baseDir = '';
 

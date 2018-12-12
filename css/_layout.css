@@ -5,6 +5,7 @@
 
 .container-inner{
     max-width: var(--grid-max);
+    margin: auto;
 }
 .row{
     width: 100%;
@@ -30,4 +31,41 @@
 }
 .col-6{
     width: calc(var(--grid-column) * 6);
+}
+
+/* COMMON */
+.decor
+    display: block
+    width: $grid-column
+    background-image: url(../img/decor.svg)
+    background-size: 100% auto
+    background-repeat: no-repeat
+    &--half
+        height: 35px
+    &--bottom
+        background-position: bottom center
+
+/* TOP BAR */
+
+.top-bar{
+    justify-content: flex-end;
+}
+.top-bar__menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 ;
+}
+.top-bar__menu__item:not(:last-child){
+    margin-right: 25px
+}
+.top-bar__menu__item a {
+    display: flex;
+    align-items: center;
+}
+
+.lang-switcher {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
 }
