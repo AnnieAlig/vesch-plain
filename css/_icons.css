@@ -1,0 +1,36 @@
+.ic{
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 16px;
+    height: 18px;
+    margin-right: 10px;
+}
+.ic--phone{
+    /* width: 16px */
+    /* height: 20px */
+    background-image: url(../img/icons/ic_phone.svg);
+}
+.ic--location{
+    /* width: 15px */
+    /* height: 18px */
+    background-image: url(../img/icons/ic_location.svg);
+}
+.ic--dropdown{}
+.ic--user{
+    /* width: 16px */
+    /* height: 18px */
+    background-image: url(../img/icons/ic_user.svg);
+}
+.ic--cart{
+    /* width: 16px */
+    /* height: 17px */
+    background-image: url(../img/icons/ic_cart.svg);
+}
+.ic--search{
+    /* width: 17px */
+    /* height: 17px */
+    background-image: url(../img/icons/ic_search.svg);
+}
+

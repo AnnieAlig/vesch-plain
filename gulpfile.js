@@ -26,7 +26,7 @@ var baseDir = '';
 // })
 
 gulp.task('css', function () {
-    return gulp.src(baseDir + '/css/main.css')
+    return gulp.src(baseDir + 'css/style.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false

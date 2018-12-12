@@ -4,7 +4,7 @@
     --grid-max: 1280px;
     --grid-column: calc(100% / var(--grid-count));
 }
-@media(min-width:1280px) {
+@media (min-width:1280px) {
     :root{
         --grid-count: 6;
         --grid-max: 1280px;
