@@ -26,7 +26,9 @@
     --color_white: #ffffff;
     --color_placeholder: #c6c7c9;
     --color_submit: #2e3848;
+    --color_light: #9DA0B4;
    
     /* common styles */
     --transition: all .3s ease;
+    --shadow: 0 3px 6px rgba(52,58,73,0.16), 0 3px 6px rgba(52,58,73,0.23);
 }

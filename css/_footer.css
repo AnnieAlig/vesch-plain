@@ -1,0 +1,76 @@
+.footer{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.footer__logo{
+    display: block;
+}
+.footer__logo-container .decor-to--left{
+    width: 100%;
+    margin-left: -100%;
+    margin-top: 70px;
+}
+.footer__title,
+.footer__link{
+    font-size: var(--text-small);
+    margin-bottom: 20px;
+    display: block;
+}
+.footer__subtitle{
+    font-size: var(--text-small);
+    color: var(--color_light);
+}
+.footer__nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__nav-link{
+    display: block;
+    font-size: var(--text-small);
+    color: var(--color_light);
+}
+.footer__title .footer__nav-link{
+    color: var(--color_text);
+    padding: 2px 0;
+}
+.footer__title .footer__nav-link:hover{
+    color: var(--color_action);
+}
+
+
+.footer__social-container{
+    display: flex;
+    padding-top: 5px;
+}
+.footer__social{
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%
+}
+.soc-viber{
+    background-image: url(../img/icons/ic_viber.svg);
+}
+.soc-telegram{
+    background-image: url(../img/icons/ic_telegram.svg);
+}   
+.soc-instagram{
+    background-image: url(../img/icons/ic_instagram.svg);
+}
+.soc-facebook{
+    background-image: url(../img/icons/ic_facebook.svg);
+}
+.soc-youtube{
+    background-image: url(../img/icons/ic_youtube.svg);
+}
+
+.copyright{
+    padding-bottom: 35px;    
+}
+.copyright__text{
+    font-size: var(--text-small);
+}

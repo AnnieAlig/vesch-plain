@@ -1,0 +1,68 @@
+.blacktie__outer{
+    background-color: var(--color_submit);
+    position: relative;
+    top: 210px;
+    z-index: -1;
+}
+.blacktie{
+    position: relative;
+    top: -210px;
+    color: var(--color_white);
+}
+.blacktie .brand_text-rotated{
+    bottom: 0;
+    top: unset;
+}
+.blacktie .brand_text-rotated p{
+    color: var(--color_white);
+}
+.blacktie__main-info{
+    padding: 85px 0;
+    position: relative;
+}
+.blacktie__title-main{
+    color: var(--color_action);
+    margin-bottom: 35px;
+}
+.blacktie__description-main{
+    margin-left: 33.3%;
+    padding-right: 10px;
+}
+.blacktie__texts{
+    display: flex;
+    margin-bottom: 25px;
+}
+.blacktie__title{
+    color: var(--color_action);
+}
+.blacktie__icon{
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blacktie__icon img{
+    max-width: 75px;
+    max-height: 80px;
+    width: auto;
+}
+.blacktie__description{
+    width: 66.6%;
+}
+.blacktie__all-link{
+    font-size: var(--text-big);
+    font-weight: bold;
+    color: var(--color_action);
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.blacktie__all-link .ic {
+    margin-left: 8px;
+}
+.blacktie__all-link .ic,
+.blacktie__all-link:hover .ic{
+    color: var(--color_text);
+}
+
