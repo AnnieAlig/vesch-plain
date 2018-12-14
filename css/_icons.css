@@ -33,4 +33,22 @@
     /* height: 17px */
     background-image: url(../img/icons/ic_search.svg);
 }
-
+.ic--more{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color_action);
+    font-style: normal;
+    text-align: center;
+    transform: rotate(90deg)
+}
+.ic--plus{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color_action);
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

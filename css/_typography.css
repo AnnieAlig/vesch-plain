@@ -15,6 +15,8 @@ html, body{
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
     line-height: 1.2;
+    margin: 0;
+    /* TODO: check margins */
 }
 
 h1, h2{
@@ -26,6 +28,11 @@ h3{
     font-family: var(--titles_font);
     font-size: 24px;
     letter-spacing: -1.44px;
+    margin-bottom: 25px;
+}
+p{
+    margin: 0;
+    /* TODO: check margins */
 }
 .text-small{
     font-size: 12px;
@@ -43,4 +50,41 @@ a:hover{
 
 ul li{
     color: inherit;
+}
+
+input,
+button[type="submit"]{
+    background-color: var(--color_white);
+    height: 52px;
+    width: 196px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 10px;
+    margin-right: 10px;
+}
+input{
+    background-color: var(--color_white);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color_placeholder);
+    opacity: 1; /* Firefox */
+    text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--color_placeholder);
+} 
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--color_placeholder);
+}
+
+button[type="submit"] {
+    height: 52px;
+    background-color: var(--color_submit);
+    color: var(--color_white);
+}
+
+img, video{
+    max-width: 100%;
+    height: auto;
 }

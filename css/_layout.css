@@ -38,16 +38,35 @@
     display: block;
     width: var(--grid-column);
     background-image: url(../img/decor.svg);
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
+.decor--full{
+    height: 78px;
+}
 .decor--half{
-    height: 35px;
+    height: 39px;
 }
 .decor--bottom{
     background-position: bottom center;
 }
 
+.decor-bar--lg{
+    display: flex;
+    padding: 65px 0 20px;
+}
+.decor-bar--sm{
+    display: flex;
+}
+.decor-bar--down{
+    position: relative;
+    top: 39px;
+}
+.decor-bar--top{
+    align-items: flex-end;
+    position: relative;
+    top: -39px;
+}
 /* TOP BAR */
 
 .top-bar{
@@ -83,4 +102,20 @@
     padding: 0 0 0 20px;
     list-style-type: none;
     display: flex;
+}
+
+/* FLEX */
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+
+/* SPACINGS */
+.mt50{
+    margin-top: 50px;
 }

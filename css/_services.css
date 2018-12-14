@@ -1,0 +1,62 @@
+.services{
+    position: relative;
+}
+.services .brand_text-rotated {
+    top: 0;
+}
+.services__title-main{
+    margin-bottom: 50px;
+}
+.services__item{
+    padding-right: 20px;
+}
+.services__title{
+    min-height: 58px;
+}
+.services__image{
+    margin-bottom: 60px;
+    position: relative;
+    display: flex;
+}
+.services__link{
+    position: absolute;
+    right: 20px;
+    color: var(--color_white);
+    bottom: -50%;
+    pointer-events: none;
+    opacity: 0;
+    transition: var(--transition);
+}
+.services__link .rotated{
+    transform: translateX(100%) rotate(-90deg);
+    transform-origin: bottom left;
+    display: flex;
+    align-items: center;
+}
+.services__link .ic,
+.services__link:hover .ic{
+    color: var(--color_white);
+}
+.services__image::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color_text);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+    transition: var(--transition);
+}
+.services__image:hover::after{
+    opacity: 0.85;
+}
+.services__image:hover .services__link{
+    bottom: 20px;
+    pointer-events: initial;
+    z-index: 2;
+    opacity: 1;
+}

@@ -1,0 +1,32 @@
+.callback{
+    background-color: var(--color_action);
+    margin-left: calc(var(--grid-column) * -.5);
+    margin-right: calc(var(--grid-column) * -.5);
+    padding: 60px calc(var(--grid-column) * .5);
+    position: relative;
+}
+
+.callback::before{
+    content: '';
+    display: block;
+    height: 160px;
+    width: 90px;
+    background-image: url(../img/brand/round_text@3x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -18px;
+    margin-left: 10px;
+}
+.callback::after{
+    content: '';
+    display: block;
+    height: 120px;
+    width: 140px;
+    background-image: url(../img/brand/watermark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
+}
