@@ -1,0 +1,41 @@
+.steps{
+    padding: 110px 0;
+    position: relative;
+}
+.steps__container{
+    display: flex;
+}
+.steps__item{
+    width: 25%;
+    position: relative;
+    padding-top: 95px;
+    overflow-x: hidden;
+}
+.steps__item:nth-child(even){
+    margin-top: 115px;
+}
+.steps__number{
+    color: var(--color_action);
+    font-family: var(--titles_font);
+    font-size: 210px;
+    /* transform: scale(10); */
+    display: inline-block;
+    position: absolute;
+    top: 105px;
+    right: -40px;
+    z-index: -1;
+}
+.steps__item:first-child .steps__number{
+    right: -22px;
+}
+.mobile-app{
+    padding-top: 95px;
+}
+.mobile-app__link{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.steps .brand_text-rotated{
+    top: 10px;
+}

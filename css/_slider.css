@@ -1,11 +1,11 @@
-.decor-bar{
+/* .decor-bar{ */
     /* margin-left: calc(-1 * var(--grid-column)); */
-    height: 80px;
+    /* height: 80px;
     display: flex;
     position: relative;
     left: calc(-1 * var(--grid-column));
     bottom: -40px;
-}
+} */
 
 .slider__container{
     min-height: 588px;
