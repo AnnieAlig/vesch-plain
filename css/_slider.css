@@ -29,6 +29,7 @@
     margin: 0 var(--grid-column);
     max-width: calc(var(--grid-column) * 3);
     color: var(--color_white);
+    padding-right: 10px;
 }
 .slider__controls{
     margin-left: auto;

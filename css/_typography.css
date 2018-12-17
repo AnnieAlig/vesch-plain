@@ -111,6 +111,7 @@ img, video{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition);
 }
 .btn-primary{
     background-color: var(--color_submit);
