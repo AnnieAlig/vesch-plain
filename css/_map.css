@@ -1,5 +1,5 @@
 .map{
-    padding-top: 40px;
+    padding-top: 60px;
 }
 .map__title{
     margin-bottom: 35px;
@@ -9,5 +9,62 @@
     justify-content: flex-end;
 }
 .map__frame{
-    height: 580px;
+    height: 340px;
+    margin-right: calc(var(--grid-column) * -.5);
+    margin-left: calc(var(--grid-column) * -.5);
+}
+
+.map__sort,
+.map__view{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.map__sort .navbar__link,
+.map__view .navbar__link{
+    padding-left: 0;
+}
+@media(max-width:767px){
+    .map__menu,
+    .map__type{
+        margin-left: calc(var(--grid-column) * -.5);
+        margin-right: calc(var(--grid-column) * -.5);
+        padding-left: calc(var(--grid-column) * .5);
+        padding-right: calc(var(--grid-column) * .5);
+        background-color: var(--color_secondary);
+        width: auto;
+    }
+    .map__view{
+        flex-direction: row;
+        color: var(--color_white);
+        justify-content: space-between;
+        
+
+    }
+    .map__view .navbar__link{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media(min-width:768px){
+    .map__frame{
+        height: 580px;
+    }
+    .map{
+        padding-top: 40px;
+    }
+}
+@media(min-width:1280px){
+    .map__sort,
+    .map__view{
+        flex-direction: row;
+        align-items: center;
+    }
+    .map__frame{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .map__sort .navbar__link,
+    .map__view .navbar__link{
+        padding-left: 20px;
+    }
 }

@@ -2,4 +2,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-left: calc(var(--grid-column) * -.5);
+    margin-right: calc(var(--grid-column) * -.5);
+}
+.video__play{
+    height: 50px;
+    width: 40px;
+    background-image: url(../img/icons/ic_play.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 20px);
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media(min-width:768px){
+    .video{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .video__play{
+        height: 80px;
+        width: 70px;
+        top: calc(50% - 40px);
+        left: calc(50% - 35px);
+    }
 }

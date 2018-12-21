@@ -24,17 +24,35 @@ h1,h2,h3,h4,h5,h6{
 
 h1, h2{
     font-family: var(--titles_font);
-    font-size: 44px;
+    font-size: 24px;
     letter-spacing: -2.64px;
     text-transform: lowercase;
 }
+
+@media(min-width:768px){
+    h1, h2{
+        font-size: 34px;
+    }
+}
+@media(min-width:1280px){
+    h1, h2{
+        font-size: 44px;
+    }
+}
+  
 h3{
     font-family: var(--titles_font);
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: -1.44px;
     margin-bottom: 25px;
     text-transform: lowercase;
 }
+@media(min-width:768px){
+    h3{
+        font-size: 24px;
+    }
+}
+
 p{
     margin: 0;
     /* TODO: check margins */
@@ -50,48 +68,37 @@ a{
     transition: var(--transition);
 }
 a:hover{
-    color: var(--color_action);
+    color: var(--color_primary);
 }
 
 ul li{
     color: inherit;
 }
 
-input,
+/* input,
 button[type="submit"]{
     margin-right: 10px;
     display: inline-block;
-}
+} */
 input{
     background-color: var(--color_white);
     font: inherit;
     height: 50px;
-    width: 195px;
     box-shadow: none;
     outline: none;
     padding: 15px 10px;
     border: 1px solid var(--color_white);
-}
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font: inherit;
-    color: var(--color_placeholder);
-    opacity: 1; /* Firefox */
-    text-align: center;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    font: inherit;
-    color: var(--color_placeholder);
-} 
-::-ms-input-placeholder { /* Microsoft Edge */
-    font: inherit;
-    color: var(--color_placeholder);
+    line-height: 20px;
+    vertical-align: middle;
 }
 
 button[type="submit"] {
     height: 52px;
-    background-color: var(--color_submit);
+    background-color: var(--color_secondary);
     color: var(--color_white);
     cursor: pointer;
+    line-height: 20px;
+    vertical-align: middle;
 }
 
 img, video{
@@ -114,8 +121,8 @@ img, video{
     transition: var(--transition);
 }
 .btn-primary{
-    background-color: var(--color_submit);
-    border: 1px solid var(--color_submit);
+    background-color: var(--color_secondary);
+    border: 1px solid var(--color_secondary);
     color: var(--color_white);
 }
 .btn-primary:hover{

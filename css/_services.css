@@ -1,5 +1,6 @@
 .services{
     position: relative;
+    margin-top: 50px;
 }
 .services .brand_text-rotated {
     top: 0;
@@ -8,16 +9,43 @@
     margin-bottom: 50px;
 }
 .services__item{
-    padding-right: 20px;
+    padding-right: 25px;
+    margin-bottom: 50px;
 }
-.services__title{
+/* .services__title{
     min-height: 58px;
-}
+} */
 .services__image{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     position: relative;
-    display: flex;
+    display: inline-flex;
+    width: 66.6%;
+    max-height: 190px;
 }
+@media(min-width:768px){
+    .services{
+        margin-top: 0;
+    }
+    .services__title{
+        min-height: 58px;
+    }
+    .services__image{
+        max-height: unset;
+        width: auto;
+        margin-bottom: 60px;
+    }
+}
+@media(min-width:1280px){
+    .services__item{
+        padding-right: 20px;
+        margin-bottom: 0;
+    }
+    .services__image{
+        display: flex;
+        width: 100%;
+    }
+}
+
 .services__link{
     position: absolute;
     right: 20px;
@@ -70,6 +98,7 @@
     padding: 10px 0;
     margin-bottom: 15px;
     margin-top: 25px;
+    margin-left: auto;
 }
 .services__all-link .ic {
     margin-left: 8px;

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/stylemin.css">
 </head>
 <body>
-    <header class="container-inner">
+    <header class="container-inner header-desktop">
         <div class="top-bar row">
             <div class="decor decor--half decor--bottom"></div>
             <div class="col-4 top-bar__container">
@@ -29,7 +29,7 @@
                         <a class="top-bar__link text-small" href="">
                             <i class="ic ic--location"></i>
                             Киев
-                        <i class="ic ic--dropdown"></i>
+                        <i class="ic ic--dropdown">^</i>
                         </a>
                     </li>
                     <li class="top-bar__item">
@@ -58,7 +58,7 @@
                                 RU
                                 </a>
                             </li>
-                            <i class="ic ic--dropdown"></i>
+                            <i class="ic ic--dropdown">^</i>
                         </ul>
                     </li>
                 </ul>
@@ -73,7 +73,7 @@
                 <li class="navbar__item">
                     <a href="" class="navbar__link">
                         О нас
-                        <i class="ic ic--dropdown"></i>
+                        <i class="ic ic--dropdown">^</i>
                     </a>
                 </li>
                 <li class="navbar__item">
@@ -94,16 +94,203 @@
             </ul>
         </div>
     </header>
+
+    <div class="mobile_collapsed">
+        <div class="container-inner">
+            <div class="mobile__container">
+                <div class="mobile__head">
+                    <i class="ic ic--close"></i>
+                </div>
+                <div class="mobile__body">
+                    <div class="row justify-content-between">
+                        <ul class="menu-list mobile__phones col-3 hidden-mobile">
+                            <li class="mobile__item">
+                                <a class="mobile__link text-small" href="tel:0931700909">
+                                    <i class="ic ic--phone ic--mobile"></i>
+                                    (093) 170&bull;09&bull;09
+                                </a>
+                            </li>
+                            <li class="mobile__item">
+                                <a class="mobile__link text-small" href="tel:0949533909">
+                                    (094) 953&bull;39&bull;09
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="location-link mobile__link text-small hidden-tablet" href="">
+                            <i class="ic ic--location ic--mobile"></i>
+                            Киев
+                            <i class="ic ic--dropdown">^</i>
+                        </a>
+                        <ul class="lang-switcher">
+                            <li>
+                                <a href="" class="active text-small">Рус</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-small">Укр</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile__search-bar hidden-tablet">
+                        <label for="" class="search-label"> 
+                            <input type="text" class="search-input" placeholder="Поиск по сайту...">
+                            <i class="ic ic--search ic--mobile"></i>
+                        </label>
+                    </div>
+                    <div class="row mobile__menu-row">
+                        <div class="col-3">
+                            <ul class="menu-list mobile__phones hidden-tablet">
+                                <li class="mobile__item">
+                                    <a class="mobile__link text-small" href="tel:0931700909">
+                                        <i class="ic ic--phone ic--mobile"></i>
+                                        (093) 170&bull;09&bull;09
+                                        <span class="mobile__link--colored">Позвонить</span>
+                                    </a>
+                                </li>
+                                <li class="mobile__item">
+                                    <a class="mobile__link text-small" href="tel:0949533909">
+                                        <i class="ic ic--phone ic--mobile"></i>
+                                        (094) 953&bull;39&bull;09
+                                        <span class="mobile__link--colored">Позвонить</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="menu-list mobile__menu-main">
+                                <li class="mobile__menu-item">
+                                    <h5 class="mobile__title">
+                                        <a href="" class="mobile__menu-link">Акции</a>
+                                    </h5>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <h5 class="mobile__title">
+                                        <a href="" class="mobile__menu-link">Сервисы</a>
+                                    </h5>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <h5 class="mobile__title">
+                                        <a href="" class="mobile__menu-link">Услуги</a>
+                                    </h5>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <h5 class="mobile__title">
+                                        <a href="" class="mobile__menu-link">Программа лояльности</a>
+                                    </h5>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <h5 class="mobile__title">
+                                        <a href="" class="mobile__menu-link">Пункты приёма</a>
+                                    </h5>
+                                </li>
+                            </ul>
+                            <h5 class="mobile__title">О нас</h5>
+                            <ul class="menu-list mobile__menu-about">    
+                                <li class="mobile__menu-item">
+                                    <a href="" class="mobile__menu-link">Компания</a>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <a href="" class="mobile__menu-link">Как мы работаем</a>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <a href="" class="mobile__menu-link">Программа лояльности</a>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <a href="" class="mobile__menu-link">Новости</a>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <a href="" class="mobile__menu-link">Вакансии </a>
+                                </li>
+                                <li class="mobile__menu-item">
+                                    <a href="" class="mobile__menu-link">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-1">
+                            <div class="mobile__social-container">
+                                <a href="" class="mobile__social social soc-viber"></a>
+                                <a href="" class="mobile__social social soc-telegram"></a>
+                                <a href="" class="mobile__social social soc-instagram"></a>
+                                <a href="" class="mobile__social social soc-facebook"></a>
+                                <a href="" class="mobile__social social soc-youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile__footer">
+                    <p class="mb25">Скачайте приложение через</p>
+                    <a href="" class="mobile-app__link">
+                        <img src="./img/home/apple_white.png" alt="app store">
+                    </a>
+                    <a href="" class="mobile-app__link">
+                        <img src="./img/home/google_white.png" alt="google play">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="container-inner header-mobile">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="decor decor--half decor--bottom"></div>
+        </div>
+        <div class="navbar">
+            <a href="/" class="navbar__brand">
+                <img class="hidden-mobile" src="./img/brand/logo@2x.png" srcset="./img/brand/logo@1x.png 1x, ./img/brand/logo@2x.png 2x, ./img/brand/logo@3x.png 3x" alt="VESCH">
+                <img class="hidden-tablet hidden-desktop" src="./img/brand/watermark.svg" alt="VESCH">
+            </a>
+            <ul class="menu-list navbar__menu">
+                <li class="navbar__item hidden-mobile">
+                    <a class="navbar__link text-small" href="">
+                        <i class="ic ic--location"></i>
+                        Киев
+                        <i class="ic ic--dropdown">^</i>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link text-small" href="">
+                        <svg class="ic svg--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.46 17.62">
+                            <g id="user">
+                                <path fill="#9da0b4" d="M7.17,9.32h.11A3.29,3.29,0,0,0,9.81,8.21C11.16,6.67,11,4.08,10.92,3.77A3.66,3.66,0,0,0,9.18.51,3.79,3.79,0,0,0,7.26,0h0A3.89,3.89,0,0,0,5.29.49,3.67,3.67,0,0,0,3.53,3.77c0,.31-.24,2.91,1.11,4.44A3.29,3.29,0,0,0,7.17,9.32ZM4.71,3.88h0s0,0,0,0a2.7,2.7,0,0,1,1-2.21A2.58,2.58,0,0,1,7.2,1.21h0a2.65,2.65,0,0,1,1.54.48,2.72,2.72,0,0,1,1,2.15v.05c0,.18.2,2.37-.82,3.52a2.13,2.13,0,0,1-1.67.7h0a2.16,2.16,0,0,1-1.68-.7C4.51,6.24,4.71,4,4.71,3.88ZM14.46,14h0a.11.11,0,0,0,0-.05v0h0c0-.72-.07-2.4-1.66-2.95h0a9.44,9.44,0,0,1-2.8-1.29h0a.62.62,0,0,0-.46-.1.66.66,0,0,0-.4.25.63.63,0,0,0,.15.87,11.06,11.06,0,0,0,3.19,1.48c.7.25.79,1,.81,1.8V14a6.05,6.05,0,0,1-.05,1,12.56,12.56,0,0,1-5.94,1.37A12.43,12.43,0,0,1,1.29,15a7.77,7.77,0,0,1-.06-1v0a.13.13,0,0,0,0-.06c0-.77.1-1.54.81-1.8a11,11,0,0,0,3.17-1.46h0a.62.62,0,0,0-.71-1,9.44,9.44,0,0,1-2.8,1.29H1.67C.08,11.51,0,13.19,0,13.9H0V14H0v0a5.71,5.71,0,0,0,.19,1.63.59.59,0,0,0,.24.3,13.15,13.15,0,0,0,6.8,1.68A13.24,13.24,0,0,0,14,15.94a.63.63,0,0,0,.24-.3A6,6,0,0,0,14.46,14Z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">
+                        <svg class="ic svg--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.41 15.27">
+                            <g id="cart" data-name="Shape 7">
+                                <path fill="#9da0b4" d="M15.26,4.68a.61.61,0,0,0-.46-.2H10.89V.6a.6.6,0,0,0-.61-.6H5.12a.6.6,0,0,0-.6.6V4.48H.61a.61.61,0,0,0-.46.2A.57.57,0,0,0,0,5.16L1.3,14.75a.6.6,0,0,0,.6.52H3.19a.6.6,0,0,0,.6-.6.6.6,0,0,0-.6-.6H2.43L1.3,5.68H4.52V7A.61.61,0,0,0,5.73,7V5.68H9.68V7a.61.61,0,0,0,1.21,0V5.68h3.22v0L13,14.07H5.77a.6.6,0,0,0-.61.6.6.6,0,0,0,.61.6h7.74a.6.6,0,0,0,.6-.52L15.4,5.16A.64.64,0,0,0,15.26,4.68Zm-5.58-.2H5.73V1.2H9.68Z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navbar__item hidden-mobile">
+                    <a href="" class="navbar__link">
+                        <i class="ic ic--search"></i>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">
+                        <i class="ic ic--collapse"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <div class="slider container-inner">
         <div class="decor-bar decor-bar--down">
-            <div class="decor decor--full decor-to--left"></div>
-            <div class="col-4"></div>
+            <div class="decor decor--full decor-to--left">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
+            <div class="col-desktop-4 col-tablet-2 col-2"></div>
             <div class="decor decor--half decor--top"></div>
         </div>
         <div class="slider__container">
             <div class="slider__images"></div>
             <div class="slider__text">
-                <h1 class="slder__title">Исключительно передовые эко-френдли технологии очищения и реновании вещей</h1>
+                <h1 class="slder__title">Исключительно передовые <br/> эко-френдли технологии очищения и реновании вещей</h1>
             </div>
             <ul class="slider__controls">
                 <li class="slider__control">
@@ -125,23 +312,25 @@
             </ul>
         </div>
     </div>
+
     <div class="container-inner">
         <div class="decor-bar decor-bar--sm decor-bar-absolute">
             <div class="col-1"></div>
             <div class="decor decor--half decor--top"></div>
         </div>
         <div class="callback">
-            <div class="row align-items-center">
-                <div class="col-2 callback__texts">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-desktop-2 callback__texts">
                     <h3 class="callback__title">
                         Заказать мобильную эко-чистку
                     </h3>
                     <p class="callback__description">
                         Мы освободим вас от домашних хлопот - 
-                        <br>курьер заберет и привезет вещи по адресу.
+                        <!-- Add <br> only for desktop -->
+                        курьер заберет и привезет вещи по адресу.
                     </p>
                 </div>
-                <div class="col-1"></div>
+                <!-- <div class="col-1"></div> -->
                 <form action="" class="callback__form">
                     <input type="text" class="callback__input" placeholder="Введите имя">
                     <input type="text" class="callback__input" placeholder="+38(0__)___-__-__">
@@ -149,18 +338,23 @@
                 </form>
             </div>
         </div>
-        <div class="decor-bar--sm">
-            <div class="col-3"></div>
+        <div class="decor-bar--sm decor-bar">
+            <div class="col-1 col-tablet-2 col-desktop-3"></div>
             <div class="decor decor--half decor--bottom"></div>
         </div>
     </div>
+
     <div class="container-inner">
         <div class="decor-bar decor-bar--lg">
-            <div class="col-2"></div>
-            <div class="decor decor--full"></div>
+            <div class="col-tablet-2 col-desktop-2"></div>
+            <div class="decor decor--full">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
         </div>
         <section class="benefits row">
-            <div class="col-2 benefits__item">
+            <div class="col-tablet-2 col-desktop-2 benefits__item">
                 <h3 class="benefits__title">Эко-безопасные технологии</h3>
                 <p class="benefits__description">
                     Все наши средства по уходу за вещами абсолютно экологичны, гипоалергенны и безопасны для вас и окружающей среды
@@ -173,7 +367,7 @@
                     <img src="./img/home/benefits_1@2x.png" srcset="./img/home/benefits_1@1x.png 1x, ./img/home/benefits_1@2x.png 2x, ./img/home/benefits_1@3x.png 3x" alt="">
                 </div>
             </div>
-            <div class="col-2 benefits__item">
+            <div class="col-tablet-2 col-desktop-2 benefits__item">
                 <h3 class="benefits__title">Деликатная чистка</h3>
                 <p class="benefits__description">
                     Мы используем инновационные эко-технологии чистки Intese и аквачистки Electrolux Laggon.
@@ -186,7 +380,7 @@
                     <img src="./img/home/benefits_2@2x.png" srcset="./img/home/benefits_2@1x.png 1x, ./img/home/benefits_2@2x.png 2x, ./img/home/benefits_2@3x.png 3x" alt="">
                 </div>
             </div>
-            <div class="col-2 benefits__item">
+            <div class="col-tablet-2 col-desktop-2 benefits__item">
                 <h3 class="benefits__title">Доступное качество</h3>
                 <p class="benefits__description">
                     Наилучшее качество деликатной и безопасной для здоровья экочистки по цене обычной химчистки.
@@ -199,21 +393,39 @@
                     <img src="./img/home/benefits_3@2x.png" srcset="./img/home/benefits_1@3x.png 1x, ./img/home/benefits_3@2x.png 2x, ./img/home/benefits_3@3x.png 3x" alt="">
                 </div>
             </div>
-            <div class="brand_text-rotated">
+            <div class="decor-bar col-4 col-tablet-2 mt20 hidden-desktop align-items-end decor-to-right">
+                <div class="col-2"></div>
+                <div class="col-2 decor decor--full">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                        <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="brand_text-rotated hidden-mobile">
                 <p>новый взгляд на вещи</p>
             </div>
         </section>
-        <div class="decor-bar decor-bar--lg">
+        <div class="decor-bar decor-bar--lg hidden-tablet hidden-mobile">
             <div class="col-5"></div>
-            <div class="decor decor--full"></div>
+            <div class="decor decor--full">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
         </div>
     </div>
+
     <div class="container-inner">
         <div class="decor-bar decor-bar--sm decor-bar--down">
             <div class="col-1"></div>
-            <div class="decor decor--full"></div>
+            <div class="decor decor--full">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
         </div>
         <section class="video">
+            <button class="video__play"></button>
             <video poster="./img/home/video_poster.png">
                 <!-- <source src="movie.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
@@ -221,24 +433,29 @@
             </video>
         </section>
         <div class="decor-bar decor-bar--sm">
-            <div class="col-1"></div>
+            <div class="col-tablet-1 col-desktop-1"></div>
             <div class="decor decor--half decor--bottom"></div>
             <div class="col-2">
             </div>
-            <div class="decor decor--full decor-bar--top"></div>
+            <div class="decor decor--full decor-bar--top">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
         </div>
     </div>
+
     <div class="container-inner">
         <section class="steps">
             <div class="row">
-                <div class="col-1"></div>
-                <h2 class="col-3 steps__main-title">
+                <div class="col-tablet-1 col-desktop-1"></div>
+                <h2 class="col-tablet-3 col-desktop-3 steps__main-title">
                     Мобильная экочистка &ndash; <br> как это работает
                 </h2>
-                <div class="col-2 steps__image">
+                <div class="col-tablet-2 col-desktop-2 steps__image">
                     <img src="./img/home/mobile_bus.png" alt="mobile cleaning">
                 </div>
-                <div class="brand_text-rotated">
+                <div class="brand_text-rotated hidden-mobile">
                     <p>мобильная экочистка</p>
                 </div>
                 <div class="steps__container col-4">
@@ -246,7 +463,7 @@
                         <div class="steps__number">1</div>
                         <h3 class="steps__title">Вы заказываете</h3>
                         <p class="steps__description">
-                            Больше никаких звонков оператору и ожидания на линии &ndash; всего один клик подарит вашим любимым вещам тот уровень заботы, которого они заслуживают.
+                            Больше никаких звонков оператору и&nbsp;ожидания на линии &ndash; всего один клик подарит вашим любимым вещам тот уровень заботы, которого они заслуживают.
                         </p>
                     </div>
                     <div class="steps__item">
@@ -271,8 +488,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-1 mobile-app">
+                <div class="col-tablet-2 col-desktop-1"></div>
+                <div class="col-tablet-2 col-desktop-1 mobile-app">
                     <h3 class="mobile-app__title">Скачайте приложение через</h3>
                     <a href="" class="mobile-app__link">
                         <img src="./img/home/apple@2x.png" srcset="./img/home/apple@1x.png 1x, ./img/home/apple@2x.png 2x, ./img/home/apple@3x.png 3x" alt="app store">
@@ -284,13 +501,14 @@
             </div>
         </section>
     </div>
+
     <div class="container-inner">
         <div class="decor-bar decor-bar--sm">
             <div class="decor decor--half decor--top"></div>
         </div>
         <div class="callback">
-            <div class="row align-items-center">
-                <div class="col-2 callback__texts">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-desktop-2 callback__texts">
                     <h3 class="callback__title">
                         Заказать мобильную эко-чистку
                     </h3>
@@ -299,7 +517,7 @@
                         <br>курьер заберет и привезет вещи по адресу.
                     </p>
                 </div>
-                <div class="col-1"></div>
+                <!-- <div class="col-1"></div> -->
                 <form action="" class="callback__form">
                     <input type="text" class="callback__input" placeholder="Введите имя">
                     <input type="text" class="callback__input" placeholder="+38(0__)___-__-__">
@@ -308,26 +526,36 @@
             </div>
         </div>
         <div class="decor-bar decor-bar--sm">
-            <div class="col-1"></div>
+            <div class="col-1">
+            </div>
             <div class="decor decor--half decor--bottom"></div>
         </div>
     </div>
+
     <div class="container-inner">    
-        <div class="decor-bar decor-bar--sm">
-            <div class="decor decor--full"></div>
-            <div class="col-3"></div>
-            <div class="decor decor--full mt50"></div>
+        <div class="decor-bar decor-bar--sm mb-tablet-80">
+            <div class="decor decor--full">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
+            <div class="col-1 col-desktop-3 col-tablet-2"></div>
+            <div class="decor decor--full mt20 mt-tablet-50 mt-desktop-50">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
         </div>
         <section class="services">
             <div class="row">
-                <div class="col-1"></div>
+                <div class="col-desktop-1"></div>
                 <h2 class="services__title-main">Популярные услуги</h2>
-                <div class="brand_text-rotated">
+                <div class="brand_text-rotated hidden-mobile">
                     <p>услуги</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-1 services__item">
+                <div class="col-tablet-2 col-desktop-1 services__item">
                     <div class="services__image">
                         <img src="./img/home/service_1@2x.png" srcset="./img/home/service_1@1x.png 1x, ./img/home/service_1@2x.png 2x, ./img/home/service_1@3x.png 3x" alt="">
                         <div class="services__link">
@@ -340,7 +568,7 @@
                     <h3 class="services__title">Верхняя одежда</h3>
                     <p class="services__description">Достойный уход за верхней одеждой, будь то кашемировое пальто, любимая куртка, белый пуховик или плащ.</p>
                 </div>
-                <div class="col-1 services__item">
+                <div class="col-tablet-2 col-desktop-1 services__item">
                     <div class="services__image">
                         <img src="./img/home/service_2@2x.png" srcset="./img/home/service_2@1x.png 1x, ./img/home/service_2@2x.png 2x, ./img/home/service_2@3x.png 3x" alt="">
                         <div class="services__link">
@@ -353,7 +581,7 @@
                     <h3 class="services__title">Одежда из меха и кожи</h3>
                     <p class="services__description">Профессиональные технологии Vesch вернут бесценным вещам чистоту и первоначальный вид.</p>
                 </div>
-                <div class="col-1 services__item">
+                <div class="col-tablet-2 col-desktop-1 services__item">
                     <div class="services__image">
                         <img src="./img/home/service_3@2x.png" srcset="./img/home/service_3@1x.png 1x, ./img/home/service_3@2x.png 2x, ./img/home/service_3@3x.png 3x" alt="">
                         <div class="services__link">
@@ -366,7 +594,7 @@
                     <h3 class="services__title">Одежда</h3>
                     <p class="services__description">Бережный эко-уход за повседневной одеждой или вещей для особых случаев.</p>
                 </div>
-                <div class="col-1 services__item">
+                <div class="col-tablet-2 col-desktop-1 services__item">
                     <div class="services__image">
                         <img src="./img/home/service_4@2x.png" srcset="./img/home/service_4@1x.png 1x, ./img/home/service_4@2x.png 2x, ./img/home/service_4@3x.png 3x" alt="">
                         <div class="services__link">
@@ -379,7 +607,7 @@
                     <h3 class="services__title">Праздничная одежда</h3>
                     <p class="services__description">Эко-технологии бережно позаботятся даже о торжественной и праздничной одежде из самых деликатных тканей.</p>
                 </div>
-                <div class="col-1 services__item">
+                <div class="col-tablet-2 col-desktop-1 services__item">
                     <div class="services__image">
                         <img src="./img/home/service_5@2x.png" srcset="./img/home/service_5@1x.png 1x, ./img/home/service_5@2x.png 2x, ./img/home/service_5@3x.png 3x" alt="">
                         <div class="services__link">
@@ -392,7 +620,7 @@
                     <h3 class="services__title">Обувь</h3>
                     <p class="services__description">Для любимой обуви - забота мастеров Vesch, только итальянские материалы, новейшее оборудование.</p>
                 </div>
-                <div class="col-1 services__item">
+                <div class="col-tablet-2 col-desktop-1 services__item">
                     <div class="services__image">
                         <img src="./img/home/service_6@2x.png" srcset="./img/home/service_6@1x.png 1x, ./img/home/service_6@2x.png 2x, ./img/home/service_6@3x.png 3x" alt="">
                         <div class="services__link">
@@ -407,49 +635,82 @@
                 </div>
             </div>
             <div class="row services__all">
-                <div class="col-5"></div>
-                <a href="" class="col-1 services__all-link">
+                <div class="col-1 col-tablet-3 col-desktop-5"></div>
+                <a href="" class="col-tablet-1 col-desktop-1 services__all-link">
                     Все услуги 
                     <i class="ic ic--more">^</i>
                 </a>
             </div>
         </section>
         <div class="decor-bar decor-bar--sm">
-            <div class="col-4"></div>
-            <div class="decor decor--full"></div>
+            <div class="col-2 col-desktop-4 col-tablet-3"></div>
+            <div class="decor decor--full">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
         </div>
         <div class="decor-bar decor-bar--sm decor-bar--down">
             <div class="col-1"></div>
-            <div class="decor decor--full"></div>
+            <div class="decor decor--full">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                    <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                </svg>
+            </div>
         </div>
     </div>
+    
     <div class="container-outer blacktie__outer">
         <div class="container-inner">
-            <section class="blacktie container-inner">
+            <section class="blacktie">
                 <div class="blacktie__poster">
                     <img src="./img/home/black-tie@2x.png" srcset="./img/home/black-tie@1x.png 1x, ./img/home/black-tie@2x.png 2x, ./img/home/black-tie@3x.png 3x" alt="black tie service">
                 </div>
                 <div class="decor-bar decor-bar--sm">
+                    <div class="col-1 col-desktop-3 col-tablet-1"></div>
+                    <div class="decor decor--full mt20 mt-tablet-40">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                            <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                        </svg>
+                    </div>
+                    <div class="decor decor--full decor-bar--top">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                            <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="decor-bar hidden-desktop mt20 mt-tablet-50">
                     <div class="col-3"></div>
-                    <div class="decor decor--full mt40"></div>
-                    <div class="decor decor--full decor-bar--top"></div>
+                    <div class="decor decor--full">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                            <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                        </svg>
+                    </div>
                 </div>
                 <div class="row blacktie__main-info">
-                    <div class="decor decor--full align-self-end"></div>
-                    <div class="col-3">
+                    <div class="decor decor--full align-self-end hidden-mobile hidden-tablet">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                            <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                        </svg>
+                    </div>
+                    <div class="col-desktop-3">
                         <h2 class="blacktie__title-main">Услуга Black tie</h2>
                         <p class="blacktie__description-main">
                             Black Tie - это лучшее что может случиться с вашей вещью. Дизайнерская одежда, одежда из комбинированных тканей, элементами декора или специальной обработки требует тщательного подхода на каждом этапе обработки с применением самой эффективной и безопасной экочистки.
                         </p>
                     </div>
-                    <div class="col-1"></div>
-                    <div class="decor decor--full align-self-start"></div>
-                    <div class="brand_text-rotated">
+                    <div class="col-1 hidden-tablet hidden-mobile"></div>
+                    <div class="decor decor--full align-self-start mt30 mb50 mt-tablet-0 mt-desktop-0 mb-tablet-0 mb-desktop-0">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                            <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                        </svg>
+                    </div>
+                    <div class="brand_text-rotated hidden-mobile">
                         <p>Black Tie</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3 blacktie__item">
+                    <div class="col-4 col-desktop-3 blacktie__item">
                         <h3 class="blacktie__title">личный контроль главного технолога</h3>
                         <div class="blacktie__texts">
                             <div class="blacktie__icon">
@@ -463,7 +724,7 @@
                 </div>
                 <div class="row">
                     <div class="col-3"></div>
-                    <div class="col-3 blacktie__item">
+                    <div class="col-4 col-desktop-3 blacktie__item">
                         <h3 class="blacktie__title">индивидуальная программа чистки</h3>
                         <div class="blacktie__texts">
                             <div class="blacktie__icon">
@@ -477,7 +738,7 @@
                 </div>
                 <div class="row">
                     <div class="col-1"></div>
-                    <div class="col-3 blacktie__item">
+                    <div class="col-4 col-desktop-3 blacktie__item">
                         <h3 class="blacktie__title">любимым вещам – красивая оправа</h3>
                         <div class="blacktie__texts">
                             <div class="blacktie__icon">
@@ -490,58 +751,75 @@
                     </div>
                 </div>
                 <div class="decor-bar decor-bar--down">
-                    <div class="decor decor--full decor-to--left decor-to--top"></div>
-                    <div class="col-5"></div>
-                    <a href="" class="col-1 blacktie__all-link">
+                    <div class="decor decor--full decor-to--left decor-to--top hidden-tablet hidden-mobile">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                            <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                        </svg>
+                    </div>
+                    <div class="col-desktop-5 col-tablet-3"></div>
+                    <a href="" class="col-tablet-1 col-desktop-1 blacktie__all-link">
                         Детальнее 
                         <i class="ic ic--more">^</i>
                     </a>
                 </div>
                 <div class="decor-bar decor-bar--sm">
-                    <div class="decor decor--half mt80"></div>
-                    <div class="decor decor--full"></div>
+                    <div class="decor decor--half mt-tablet-80 mt-desktop-80"></div>
+                    <div class="decor decor--full hidden-tablet hidden-mobile">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                            <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                        </svg>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
+
     <div class="container-inner">
         <section class="priority">
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-5 d-flex">
+                <div class="col-desktop-5 d-flex flex-wrap">
                     <div class="priority__texts">
-                        <h2 class="priority__title">программа лояльности «priority club» </h2>
+                        <h2 class="priority__title">программа лояльности «priority&nbsp;club» </h2>
+                        <div class="priority__image">
+                            <img src="./img/home/priority_card@2x.png" srcset="./img/home/priority_card@1x.png 1x, ./img/home/priority_card@2x.png 2x, ./img/home/priority_card@3x.png 3x" alt="priority card">
+                        </div>
                         <p class="priority__description">
                             Используйте безграничные возможности сети эко-чисток Vesch. Станьте участником программы лояльности Priority Club и получите индивидуальные скидки, персонального менеджера и другие привилегии VIP-клиента.
                         </p>
-                        <div class="btn-container d-flex">
+                        <div class="btn-container priorty__buttons d-flex">
                             <a href="" class="btn btn-secondary">Узнать больше</a>
                             <a href="" class="btn btn-primary">Присоединиться</a>
                         </div>
                     </div>
-                    <div class="ptiority__image">
+                    <div class="priority__image hidden-tablet hidden-mobile">
                         <img src="./img/home/priority_card@2x.png" srcset="./img/home/priority_card@1x.png 1x, ./img/home/priority_card@2x.png 2x, ./img/home/priority_card@3x.png 3x" alt="priority card">
                     </div>
                 </div>
             </div>
         </section>
         <div class="decor-bar decor-bar--sm">
-            <div class="col-3"></div>
+            <div class="col-desktop-3 col-tablet-2 col-1"></div>
             <div class="decor decor--half decor--bottom"></div>
         </div>
     </div>
+
     <div class="container-inner">
             <div class="decor-bar decor-bar--sm mt30">
-                <div class="col-4"></div>
-                <div class="decor decor--full"></div>
+                <div class="col-desktop-4 col-tablet-3 col-2"></div>
+                <div class="decor decor--full">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                        <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                    </svg>
+                </div>
             </div>
         <div class="map">
             <div class="row">
-                <div class="col-1"></div>
-                <h2 class="map__title">ждем вас по адресам</h2>
+                <div class="col-desktop-1"></div>
+                <h2 class="map__title col-3 col-tablet-4 col-desktop-4">ждем вас по адресам</h2>
             </div>
             <div class="map__menu row">
-                <div class="col-3">
+                <div class="col-3 hidden-mobile">
                     <ul class="menu-list map__sort">
                         <li class="navbar__item">
                             <a href="" class="navbar__link">Все локации</a>
@@ -554,7 +832,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-desktop-3 col-tablet-1 col-4">
                     <ul class="menu-list map__view">
                         <li class="menu-list-item navbar__item">
                             <a href="" class="menu-list-link navbar__link active">Карта</a>
@@ -566,64 +844,74 @@
                 </div>
             </div>
             <div class="map__frame">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.1316161213595!2d30.478105615686832!3d50.42001937947115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cecfedb45233%3A0x68b832bbbd83e6f9!2z0LLRg9C70LjRhtGPINCf0YDQtdC-0LHRgNCw0LbQtdC90YHRjNC60LAsIDQzLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1544827621549" width="100%" height="580" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.1316161213595!2d30.478105615686832!3d50.42001937947115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cecfedb45233%3A0x68b832bbbd83e6f9!2z0LLRg9C70LjRhtGPINCf0YDQtdC-0LHRgNCw0LbQtdC90YHRjNC60LAsIDQzLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1544827621549" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
+            <!-- <div class="map__type">
+                Тип: все локации
+            </div> -->
         </div>
     </div>
+
     <div class="container-inner">
         <div class="decor-bar decor-bar--sm decor-bar-absolute">
             <div class="decor decor--half decor--top"></div>
         </div>
         <div class="callback">
-            <div class="row align-items-center">
-                <div class="col-2 callback__texts">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-desktop-2 callback__texts">
                     <h3 class="callback__title">
                         Заказать мобильную эко-чистку
                     </h3>
                     <p class="callback__description">
-                        Мы освободим вас от домашних хлопот - 
-                        <br>курьер заберет и привезет вещи по адресу.
+                        Будьте в курсе новостей, акций, приятных бонусов и рекомендаций по уходу за вещами.
                     </p>
                 </div>
-                <div class="col-1"></div>
+                <!-- <div class="col-1"></div> -->
                 <form action="" class="callback__form">
                     <input type="text" class="callback__input" placeholder="Введите имя">
                     <input type="text" class="callback__input" placeholder="+38(0__)___-__-__">
-                    <button class="callback__submit btn btn-primary" type="submit">Заказать</button>
+                    <button class="callback__submit btn btn-primary" type="submit">Подписаться</button>
                 </form>
             </div>
         </div>
         <div class="decor-bar decor-bar--sm">
-            <div class="col-2"></div>
+            <div class="col-desktop-2 col-1"></div>
             <div class="decor decor--half decor--bottom"></div>
         </div>
     </div>
+
     <footer class="container-inner">
         <div class="footer">
             <div class="row">
-                <div class="col-1 footer__logo-container">
+                <div class="col-2 col-tablet-4 col-desktop-1 footer__logo-container">
                     <a href="/" class="footer__logo">
                         <img src="./img/brand/logo@2x.png" srcset="./img/brand/logo@1x.png 1x, ./img/brand/logo@2x.png 2x, ./img/brand/logo@3x.png 3x" alt="VESCH">
                     </a>
-                    <div class="decor decor--full decor-to--left"></div>
+                    <div class="hidden-mobile hidden-tablet decor decor--full decor-to--left">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213 75" style="enable-background:new 0 0 213 75;" xml:space="preserve">
+                            <path fill="#d5db38" d="M212,1c3.1-0.6,2,1.7,2,3c0,19.7,0,39.3,0,59c-3,0.9-6.1,1.7-9.1,2.6c-19.7,6.1-39.8,9.9-60.4,9.1    c-16.8-0.6-33.4-3.4-50-6c-18.9-2.9-37.8-6.6-57-3.6C25.4,67,13.6,69.5,3,76c-3,0.6-2-1.7-2-3c0-19.7,0-39.4,0-59    C11.4,9.6,22.1,5.9,33.3,3.8C53,0.2,72.4,3.5,91.8,6.4c25,3.8,49.9,8.7,75.3,5.5C182.5,9.9,197.6,7,212,1z"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="col-1 mt40">
+                <div class="col-4 col-tablet-2 col-desktop-1 mt40 order-3 order-tablet-3 order-desktop-1">
                     <h5 class="footer__title">Свяжитесь с нами</h5>
                     <p class="footer__subtitle">По телефону</p>
                     <a href="tel:0949533909" class="footer__link">(094) 953•39•09</a>
+                    <a href="tel:0949533909" class="btn btn-primary hidden-tablet hidden-desktop footer__btn--mobile">Позвонить</a>
                     <p class="footer__subtitle">Пишите нам на почту</p>
                     <a href="" class="footer__link">info@gmail.com</a>
+                    <a href="" class="btn btn-primary hidden-tablet hidden-desktop footer__btn--mobile">Написать</a>
                     <p class="footer__subtitle">Мы в соцсетях</p>
                     <div class="footer__social-container">
-                        <a href="" class="footer__social soc-viber"></a>
-                        <a href="" class="footer__social soc-telegram"></a>
-                        <a href="" class="footer__social soc-instagram"></a>
-                        <a href="" class="footer__social soc-facebook"></a>
-                        <a href="" class="footer__social soc-youtube"></a>
+                        <a href="" class="footer__social social soc-viber"></a>
+                        <a href="" class="footer__social social soc-telegram"></a>
+                        <a href="" class="footer__social social soc-instagram"></a>
+                        <a href="" class="footer__social social soc-facebook"></a>
+                        <a href="" class="footer__social social soc-youtube"></a>
                     </div>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-1 mt40">
+                <div class="col-desktop-1"></div>
+                <div class="col-4 col-tablet-2 col-desktop-1 mt40 order-1 order-tablet-1 order-desktop-2">
                     <h5 class="footer__title">О нас</h5>
                     <ul class="footer__nav">    
                         <li class="footer__nav-item">
@@ -646,7 +934,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-1 mt40">
+                <div class="col-4 col-tablet-2 col-desktop-1 mt40 order-2 order-tablet-2 order-desktop-3">
                     <ul class="footer__nav">
                         <li class="footer__nav-item">
                             <h5 class="footer__title">
@@ -675,7 +963,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-1 mt40">
+                <div class="col-tablet-2 col-desktop-1 mt40 order-4">
                     <h5 class="footer__title mb25">Скачайте приложение через</h5>
                     <a href="" class="mobile-app__link">
                         <img src="./img/home/apple@2x.png" srcset="./img/home/apple@1x.png 1x, ./img/home/apple@2x.png 2x, ./img/home/apple@3x.png 3x" alt="app store">
@@ -687,7 +975,7 @@
             </div>
         </div>
         <div class="copyright">
-            <div class="col-1 copyright__text">©2018 Vesch. <br/>All rights reserved.</div>
+            <div class="col-tablet-1 col-desktop-1 copyright__text">©2018 Vesch. <br/>All rights reserved.</div>
         </div>
         <div class="decor-bar">
             <div class="col-2"></div>

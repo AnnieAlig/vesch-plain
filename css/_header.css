@@ -1,3 +1,9 @@
+@media(max-width:1279px){
+    .header-desktop{
+        display: none;
+    }
+}
+
 /* TOP BAR */
 
 .top-bar{
@@ -15,6 +21,11 @@
 }
 .top-bar__menu--main .top-bar__link{
     padding: 10px;
+}
+@media(min-width:1280px) and (max-width:1440px){
+    .top-bar__menu--main .top-bar__link{
+        padding: 10px 6px;
+    }
 }
 .top-bar__menu--ic{
     margin-left: -5px;
@@ -40,8 +51,12 @@
     width: var(--grid-column);
 }
 .navbar__menu {
-    padding: 30px 0 0;
     margin-right: -20px;
+}
+@media(min-width:768px){
+    .navbar__menu {
+        padding: 30px 0 0;
+    }
 }
 .navbar__item{}
 .navbar__link{
@@ -50,7 +65,7 @@
     padding: 10px 20px;
 }
 .navbar__link.active{
-    color: var(--color_action);
+    color: var(--color_primary);
     position: relative;
 }
 .navbar__link.active::after{
@@ -58,8 +73,170 @@
     position: absolute;
     width: 7px;
     height: 7px;
-    background-color: var(--color_action);
+    background-color: var(--color_primary);
     border-radius: 50%;
     top: 10px;
-    right: 10px;
+    /* right: 10px; */
+    right: 0;
+}
+
+
+/* MOBILE HEADER */
+.navbar__link{
+    padding: 10px;
+}
+.mobile_collapsed{
+    background-color: var(--color_secondary);
+    color: var(--color_white);
+}
+.mobile__container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.mobile__head{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+@media(min-width:768px){
+    .mobile__head{
+        padding: 20px 0 40px;
+    }
+}
+
+.mobile__body{
+    padding-top: 10px;
+    flex: 1;
+}
+.mobile__phones .mobile__link{
+    margin-right: 25px;
+}
+.mobile__link{
+    padding: 10px 5px;
+}
+
+.mobile_collapsed .lang-switcher{
+    padding-left: 0;
+    margin-left: -15px!important;
+}
+.mobile_collapsed .lang-switcher a{
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+.mobile_collapsed a.active{
+    color: var(--color_primary)
+}
+
+.mobile__menu-row{
+    margin: 40px 0;
+}
+.mobile__menu-main{
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mobile__title{
+    font-size: var(--text-big);
+    text-transform: lowercase;
+    margin-bottom: 15px;
+    font-family: var(--titles_font);
+}
+@media(min-width:768px){
+    .mobile__title{
+        font-size: var(--text-large);
+        margin-bottom: 15px;
+    }
+}
+.mobile__menu-link{
+    padding: 5px 0;
+}
+
+.mobile__menu-about{
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: var(--text-normal);
+}
+@media(min-width:768px){
+    .mobile__menu-about{
+        font-size: var(--text-big);
+    }
+}
+
+.mobile__social-container{
+    margin-top: 10px;
+}
+.mobile__social{
+    margin-bottom: 20px;
+}
+@media(max-width:767px){
+    .mobile__social{
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+.mobile__footer .mobile-app__link{
+    display: inline-block;
+    margin-right: 15px;
+}
+.mobile__footer{
+    padding-bottom: 45px;
+}
+
+.location-link{
+    display: flex;
+    align-items: center;
+}
+
+.mobile__search-bar{
+    margin-top: 20px;
+}
+.search-label{
+    width: 100%;
+    position: relative;
+}
+.search-input{
+    width: 100%;
+    padding-right: 26px;
+}
+.search-label .ic--search{
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 9px);
+}
+
+.search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color_secondary);
+}
+.search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--color_secondary);
+} 
+.search-input::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--color_secondary);
+}
+
+@media(max-width:767px){
+    .navbar__brand{
+        max-height: 45px;
+    }
+    .navbar__brand img{
+        max-height: 100%;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .mobile__phones{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .mobile__link{
+        flex-wrap: wrap;
+    }
+    .mobile__link--colored{
+        padding-left: 25px;
+        color: var(--color_primary);
+    }
 }

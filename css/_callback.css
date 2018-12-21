@@ -1,5 +1,5 @@
 .callback{
-    background-color: var(--color_action);
+    background-color: var(--color_primary);
     margin-left: calc(var(--grid-column) * -.5);
     margin-right: calc(var(--grid-column) * -.5);
     padding: 60px calc(var(--grid-column) * .5);
@@ -15,18 +15,107 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: -18px;
+    top: -5px;
     margin-left: 10px;
 }
 .callback::after{
     content: '';
     display: block;
-    height: 120px;
-    width: 140px;
+    height: 50px;
+    width: 65px;
     background-image: url(../img/brand/watermark.svg);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    bottom: -59px;
-    right: 30px;
+    bottom: -33px;
+    right: 13px;
+}
+
+@media(min-width:768px){
+    .callback::before{
+        top: -18px;
+    }
+}
+@media(min-width:1280px){
+    .callback::after{
+        height: 120px;
+        width: 140px;
+        bottom: -59px;
+        right: 30px;
+    }
+}
+
+.callback__description{
+    padding-right: 50px;
+    margin-bottom: 25px;
+}
+@media(min-width:1280px){
+    .callback__description{
+        padding-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+.callback__form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.callback__input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font: inherit;
+    color: var(--color_placeholder);
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font: inherit;
+    color: var(--color_placeholder);
+} 
+::-ms-input-placeholder { /* Microsoft Edge */
+    font: inherit;
+    color: var(--color_placeholder);
+}
+.callback__submit{
+    width: 100%;
+}
+@media(min-width:768px){
+    .callback__input{
+        width: calc(50% - 15px);
+        margin-bottom: 25px;
+        margin-right: 15px;
+    }
+    .callback__submit{
+        width: calc(100% - 15px);
+        margin-right: 15px;
+    }
+}
+@media(min-width:1280px){
+    .callback__form{
+        width: auto;
+    }
+
+    .callback__input{
+        width: 195px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        text-align: center;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        text-align: center;
+    } 
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        text-align: center;
+    }
+
+    .callback__submit{
+        width: 195px;
+        margin-right: 10px;
+    }
 }

@@ -49,7 +49,7 @@ gulp.task('scripts', function() {
          server: {
              baseDir: baseDir + 'dist/'
          },
-         port: 8080
+         port: 8081
      });
      gulp.watch([baseDir + 'css/*'], ['css']);
      gulp.watch([baseDir + 'js/*'], ['scripts']);
